@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b35">
+  <meta name="description" content="Dragon System - نظام مالي وإداري لإدارة محلات الموبايلات والمبيعات والمخزون والصيانة والنسخ الاحتياطي.">
+  <title>Dragon System | دراجون سيستم</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      background: #0b1224;
+      color: #f4f7ff;
+      line-height: 1.9;
+    }
+    header {
+      padding: 24px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      background: #101b35;
+      border-bottom: 1px solid #283858;
+    }
+    .brand { font-size: 25px; font-weight: bold; color: #72b8ff; }
+    nav a, footer a { color: #b9d9ff; text-decoration: none; margin: 0 8px; }
+    .hero {
+      text-align: center;
+      padding: 85px 20px;
+      background: linear-gradient(135deg, #101b35, #183d69);
+    }
+    .hero h1 { font-size: clamp(32px, 5vw, 54px); margin: 0 0 12px; }
+    .hero p { max-width: 760px; margin: 0 auto 28px; color: #d4e4ff; }
+    .button {
+      display: inline-block;
+      background: #2784e8;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main { max-width: 1100px; margin: auto; padding: 45px 20px; }
+    h2 { color: #72b8ff; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+    .feature {
+      background: #121f39;
+      border: 1px solid #283858;
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .feature h3 { color: #d7e9ff; margin-top: 0; }
+    .note { color: #c3cee1; }
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      background: #101b35;
+      border-top: 1px solid #283858;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">🐉 Dragon System</div>
+    <nav>
+      <a href="#features">المميزات</a>
+      <a href="#about">عن النظام</a>
+      <a href="privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>دراجون سيستم</h1>
+    <p>
+      نظام مالي وإداري لمساعدة محلات الموبايلات على إدارة المبيعات
+      والمشتريات والمخزون والصيانة والحسابات والنسخ الاحتياطية.
+    </p>
+    <a class="button" href="#features">اكتشف مميزات النظام</a>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2>عن Dragon System</h2>
+      <p>
+        Dragon System هو برنامج لإدارة أعمال المحلات، يهدف إلى تنظيم
+        العمليات اليومية ومتابعة المبيعات والمصروفات والأرباح والمخزون
+        من خلال واجهة سهلة الاستخدام.
+      </p>
+      <p class="note">
+        تختلف الوظائف المتاحة حسب إصدار البرنامج والإعدادات المستخدمة.
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>مميزات النظام</h2>
+      <div class="features">
+        <article class="feature">
+          <h3>📱 إدارة المنتجات</h3>
+          <p>تنظيم بيانات الهواتف والإكسسوارات ومتابعة المخزون.</p>
+        </article>
+        <article class="feature">
+          <h3>💰 المبيعات والحسابات</h3>
+          <p>تسجيل المبيعات والمدفوعات ومتابعة النتائج المالية.</p>
+        </article>
+        <article class="feature">
+          <h3>🔧 الصيانة والإصلاحات</h3>
+          <p>متابعة أجهزة العملاء وحالات الإصلاح وتكاليف الخدمة.</p>
+        </article>
+        <article class="feature">
+          <h3>☁️ النسخ الاحتياطي</h3>
+          <p>إمكانية حفظ نسخة احتياطية على Google Drive بعد ربط الحساب.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>الخصوصية وحماية البيانات</h2>
+      <p>
+        يتطلب استخدام النسخ الاحتياطية السحابية ربط حساب Google والموافقة
+        على الصلاحيات التي يطلبها التطبيق. يُرجى مراجعة سياسة الخصوصية
+        لمعرفة تفاصيل معالجة البيانات.
+      </p>
+      <p><a href="privacy.html">قراءة سياسة الخصوصية</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Dragon System. جميع الحقوق محفوظة.</p>
+    <a href="privacy.html">سياسة الخصوصية</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
